@@ -22,7 +22,7 @@ message.addEventListener('keypress', function () {
 socket.on('chat:message', function (message) {
   actions.innerHTML = '';
   output.innerHTML += `<p>
-    <<strong>${message.username}</strong>: ${message.message}
+    <strong>${message.username}</strong>: ${message.message}
    </p>`;
 });
 
